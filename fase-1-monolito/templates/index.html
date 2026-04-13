@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Orders – Monolito</title>
+</head>
+<body>
+
+<h1>Simple Orders</h1>
+
+<button onclick="createOrder()">Criar Pedido</button>
+
+<script>
+function createOrder() {
+  fetch('/orders', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      product: 'Livro',
+      quantity: 1
+    })
+  })
+}
+</script>
+
+</body>
+</html>
