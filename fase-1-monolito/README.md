@@ -42,7 +42,7 @@ sudo -u postgres psql
 - \q
 
 - psql -h localhost -U orders -d orders
-CREATE TABLE orders (id SERIAL PRIMARY KEY, product TEXT, quantity INT, status TEXT, created_at TIMESTAMP DEFAULT NOW());
+- CREATE TABLE orders (id SERIAL PRIMARY KEY, product TEXT, quantity INT, status TEXT, created_at TIMESTAMP DEFAULT NOW());
 
 3. Criar a estrutura e rodar a aplicação
 - mkdir ~/simple-orders
