@@ -48,7 +48,7 @@ sudo -u postgres psql
 - mkdir ~/simple-orders
 - cd ~/simple-orders
 
-Clone dos arquivos do Git
+- Clone dos arquivos do Git
 
 - pip3 install -r requirements.txt
 - uvicorn app:app --host 0.0.0.0 --port 8000
