@@ -24,10 +24,10 @@ Mesmo estando separado em VMs diferentes:
 
 ## Passos
 
-Para o front>>>>
-Subir um Nginx no servidor de front e hospedar o site.
+- Para o front>>>>
+Subir um servidor web (Ex; Apache) no servidor de front e hospedar o site.
 
-Para database>>>>
+- Para database>>>>
 
 Editar arquivo /etc/postgresql/14/main/postgresql.conf
 listen_addresses = '*'
@@ -41,7 +41,7 @@ sudo systemctl restart postgresql
 Check PG
 ss -lntp | grep 5432
 
-Para o backend>>>>
+- Para o backend>>>>
 
 Exportar variáveis de ambiente:
 export DB_HOST=IP_DA_VM_DB
